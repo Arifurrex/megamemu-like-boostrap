@@ -1,67 +1,79 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="src/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/normalize.css" />
 
-  <!-- Our custom CSS -->
-  <link rel="stylesheet" href="src/style.css">
-  <script src="src/1-scripts/navigation.js" defer></script>
-</head>
-<body>
-  <div class="header">
-    <a href="#" class="link">আমাদের সম্পর্কে</a>
-    <a href="#" class="link">কার্যক্রম</a>
-    <div class="dropdown" data-dropdown>
-      <button class="link" data-dropdown-button>কমিটি</button>
-      <div class="dropdown-menu information-grid">
-        <div>
-          <h1 class="dropdown-heading ">বিভাগ</h1>
-          <div class="dropdown-links">
-            <div class="link-sub-wrapper">
-                <a href="#" class="link link--sub">ঢাকা</a>
-                <div class="dropdown-links link-sub-sub-wrapper">
-                  <a href="#" class="link">জেলা কমিটি</a>
-                  <a href="#" class="link">মহানগর কমিটি</a>
-                </div>
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/1-scripts/navigation.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="link">আমাদের সম্পর্কে</a>
+      <a href="#" class="link">কার্যক্রম</a>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>কমিটি</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <h1 class="dropdown-heading">বিভাগ</h1>
+            <div class="dropdown-links">
+              <div class="link-sub-wrapper">
+                <a href="#" class="link link--sub"
+                  >ঢাকা
+                  <div class="dropdown-links link-sub-sub-wrapper">
+                    <a href="#" class="link">জেলা কমিটি</a>
+                    <a href="#" class="link">মহানগর কমিটি</a>
+                  </div>
+                </a>
+              </div>
+              <!-- -------sub sub---------- -->
+              <div class="link-sub-wrapper">
+                <a href="#" class="link link--sub"
+                  >সিলেট
+                  <div class="dropdown-links link-sub-sub-wrapper">
+                    <a href="#" class="link">জেলা কমিটি</a>
+                    <a href="#" class="link">মহানগর কমিটি</a>
+                  </div>
+                </a>
+              </div>
+              <a href="#" class="link">রাজশাহী</a>
+              <a href="#" class="link">ময়মনসিংহঃ</a>
+              <a href="#" class="link">খুলনা</a>
+              <a href="#" class="link">চিটাগাং</a>
+              <a href="#" class="link">বরিশাল</a>
             </div>
-            <!-- -------sub sub---------- -->
-            <a href="#" class="link">সিলেট</a>
-            <a href="#" class="link">রাজশাহী</a>
-            <a href="#" class="link">ময়মনসিংহঃ</a>
-            <a href="#" class="link">খুলনা</a>
-            <a href="#" class="link">চিটাগাং</a>
-            <a href="#" class="link">বরিশাল</a>
           </div>
-        </div>
-        <div>
-          <h1 class="dropdown-heading">কমিটি</h1>
-          <div class="dropdown-links">
-            <a href="#" class="link">কেন্দ্রীয় কমিটি</a>
+          <div>
+            <h1 class="dropdown-heading">কমিটি</h1>
+            <div class="dropdown-links">
+              <a href="#" class="link">কেন্দ্রীয় কমিটি</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <a href="#" class="link">ইভেন্ট</a>
-    <div class="dropdown" data-dropdown>
-      <button class="link" data-dropdown-button>Login</button>
-      <div class="dropdown-menu">
-        <form class="login-form">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-          <button type="submit">Login</button>
-        </form>
+      <a href="#" class="link">ইভেন্ট</a>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Login</button>
+        <div class="dropdown-menu">
+          <form class="login-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <button type="submit">Login</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

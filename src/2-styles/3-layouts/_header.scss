@@ -1,0 +1,87 @@
+.header {
+    background-color: var(--c-green-1);
+    display         : flex;
+    justify-content : flex-end;
+    align-items     : baseline;
+    padding         : .5rem;
+    gap             : 1rem;
+}
+
+.link {
+    background     : none;
+    border         : none;
+    text-decoration: none;
+    color          : var(--c-violent-1);
+    font-family    : inherit;
+    font-size      : inherit;
+    font-weight    : var(--fw-light);
+    cursor         : pointer;
+    padding        : 0;
+}
+
+// .link--sub{
+//     color:red;
+// }
+.dropdown.active>.link,
+.link:hover {
+    color: var(--c-violent-2);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position        : absolute;
+    right           : 0;
+    top             : calc(100% + .25rem);
+    background-color: white;
+    padding         : .75rem;
+    border-radius   : .25rem;
+    box-shadow      : 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity         : 0;
+    pointer-events  : none;
+    transform       : translateY(-10px);
+    transition      : opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
+    .dropdown-heading {
+        font-weight: var(--fw-bold);
+        color      : var(--c-violent-1);
+    }
+}
+
+.dropdown.active>.link+.dropdown-menu {
+    opacity       : 1;
+    transform     : translateY(0);
+    pointer-events: auto;
+}
+
+.information-grid {
+    display              : grid;
+    grid-template-columns: repeat(4, max-content);
+    gap                  : 2.5rem;
+}
+
+.dropdown-links {
+    display       : flex;
+    flex-direction: column;
+    gap           : .25rem;
+    padding-left  : 1em;
+
+}
+
+.link-sub-sub-wrapper {
+    display : none;
+    position: absolute;
+    right   : 100%;
+    top     : 100%;
+    padding : .75rem;
+}
+
+.link-sub-wrapper:hover .link-sub-sub-wrapper {
+    display: flex;
+}
+
+.login-form>input {
+    margin-bottom: .5rem;
+}
